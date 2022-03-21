@@ -1,0 +1,8 @@
+<button (click)="ToggleDisplay()">
+  Display Details
+</button>
+<div *ngIf="toggleDisplay">
+  <p *ngFor="let country of countries">
+    {{ country }}
+  </p>
+</div>

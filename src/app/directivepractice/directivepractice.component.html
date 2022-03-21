@@ -1,0 +1,12 @@
+<button (click)="ToggleDisplay()">
+  Display Details
+</button>
+<div *ngIf="toggleDisplay">
+  <p>{{ paragraph }}</p>
+</div>
+<p
+  *ngFor="let timestamp of timestamps; let i = index"
+  [ngStyle]="{backgroundColor: i>3?'blue':'transparent'}"
+>
+  {{ timestamp }}
+</p>

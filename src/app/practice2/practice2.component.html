@@ -1,0 +1,5 @@
+<input (input)="OnUpdateUser($event)" [(ngModel)]="username" />
+<p>{{ username }}</p>
+<button [disabled]="reset" (click)="OnClickReset()">
+  Reset
+</button>
